@@ -1,0 +1,332 @@
+/* 1. DASHBOARD */
+.dashboard {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+/* 2. BODY */
+body {
+    margin: 0;
+    padding: 0;
+    background: #050807;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* 3. HEADER */
+.site-header {
+    width: 100%;
+    height: 72px;
+    background: #050807;
+    border-bottom: 1px solid #18201d;
+}
+
+.nav-container {
+    width: 92%;
+    max-width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+/* 4. MENU BUTTON */
+.menu-button {
+    background: transparent;
+    color: #ffffff;
+    border: none;
+
+    font-size: 26px;
+    line-height: 1;
+
+    padding: 8px;
+    margin-right: 12px;
+
+    cursor: pointer;
+}
+
+
+/* 5. LOGO */
+.site-logo {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+
+
+/* 6. WALLET BUTTON */
+.wallet-button {
+    margin-left: auto;
+
+    background: #2563eb;
+    color: #ffffff;
+
+    border: none;
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.wallet-button:hover {
+    background: #1d4ed8;
+}
+
+
+/* 7. SIDEBAR */
+.sidebar {
+    position: fixed;
+
+    top: 0;
+    left: -280px;
+
+    width: 280px;
+    height: 100vh;
+
+    background: #0a0f0d;
+
+    border-right: 1px solid #18201d;
+
+    z-index: 1000;
+
+    transition: left 0.3s ease;
+}
+
+
+/* SIDEBAR OPEN */
+.sidebar.open {
+    left: 0;
+}
+
+
+/* SIDEBAR HEADER */
+.sidebar-header {
+    height: 72px;
+
+    padding: 0 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #18201d;
+}
+
+.sidebar-header h2 {
+    margin: 0;
+
+    font-size: 16px;
+    color: #ffffff;
+}
+
+
+/* CLOSE MENU */
+.close-menu {
+    background: transparent;
+
+    color: #ffffff;
+
+    border: none;
+
+    font-size: 28px;
+
+    cursor: pointer;
+}
+
+
+/* SIDEBAR NAVIGATION */
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px 12px;
+}
+
+.sidebar-nav a {
+    display: block;
+
+    padding: 14px 16px;
+
+    color: #aeb8b4;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+}
+
+.sidebar-nav a:hover {
+    background: #121a16;
+    color: #ffffff;
+}
+
+
+/* 8. CONTAINER */
+.container {
+    width: 92%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+
+/* 9. BOX / CARD */
+.box {
+    background: #0a0f0d;
+
+    border: 1px solid #18201d;
+
+    border-radius: 14px;
+
+    padding: 25px;
+
+    margin-bottom: 20px;
+}
+
+
+/* 10. LEARN MORE BUTTON */
+.learn-more {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 10px 18px;
+
+    color: #22c55e;
+
+    border: 1px solid #22c55e;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+}
+
+.learn-more:hover {
+    background: #22c55e;
+    color: #050807;
+}
+
+
+/* 11. FOOTER */
+.footer-container {
+    width: 92%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+.footer-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+.footer-brand {
+    grid-column: 1 / -1;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.footer-title {
+    color: #22c55e;
+
+    font-weight: bold;
+}
+
+.footer-column a {
+    color: #aeb8b4;
+
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #18201d;
+
+    color: #aeb8b4;
+}
+
+
+/* 12. MOBILE CSS */
+@media (max-width: 600px) {
+
+    .site-header {
+        height: 64px;
+    }
+
+    .nav-container {
+        width: 90%;
+    }
+
+    .menu-button {
+        font-size: 24px;
+        margin-right: 8px;
+    }
+
+    .site-logo {
+        width: 32px;
+        height: 32px;
+    }
+
+    .wallet-button {
+        padding: 10px 14px;
+        font-size: 13px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .box {
+        padding: 20px;
+    }
+
+    .sidebar {
+        width: 270px;
+        left: -270px;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 30px 20px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+    .footer-container {
+        width: 90%;
+    }
+
+    .learn-more {
+        width: 100%;
+
+        box-sizing: border-box;
+
+        text-align: center;
+    }
+}
